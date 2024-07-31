@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>To-do List</title>
+    </head>
+    <body>
+        <button class="mode-toggle">
+            <div class="toggle-items">
+                <span class="toggle-text">Dark Mode</span>
+                <img class="img-icon" src="image/lua.png" alt="ícone com imagem da lua" />
+            </div>
+        </button>
+        <h1>Tasks</h1>
+        <div class="task-form">
+            <div class="task-field">
+                <label for="task-name" class="task-name">Task name:</label>
+                <input id="task-name" class="task-input-name" type="text" autocomplete="off" />
+            </div>
+            <div class="operations-task">
+                <span class="add-task" onclick="addTask()">+</span>
+            </div>
+        </div>
+        <div class="to-do-list">
+            <div class="task-group"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
